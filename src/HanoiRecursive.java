@@ -7,8 +7,10 @@ public class HanoiRecursive {
             String sol1, sol2, sol3;
             int helppeg = 6 - frompeg - topeg;
 
+            // Move all disks from source to auxiliary peg
             sol1 = hanoi(n - 1, frompeg, helppeg);
             sol2 = frompeg + " --> " + topeg + ";";
+            // Move all disks from auxiliary peg to destination peg
             sol3 = hanoi(n - 1, helppeg, topeg);
 
             return sol1 + sol2 + sol3;
