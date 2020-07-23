@@ -1,8 +1,5 @@
 public class LongestPalindromeSubstring {
 
-    static int resultStart;
-    static int resultLength;
-
     public static void main (String[] args) {
         String input = "babad";
         String res = longestPalindrome(input);
